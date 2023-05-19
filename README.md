@@ -31,7 +31,7 @@ By using this OLAP schema, we can generate reports that compare the number of pa
 
 
 # Used technologies/tools: 
-Azure, Microsoft SQL Server, T-SQL, OLAP, Stored Procedures, ODBC + Chart.js
+Azure, Microsoft SQL Server, T-SQL, OLAP, Stored Procedures, Visual Studio, Analysis Services, ASP.NET Core, ODBC, Chart.js
 
 
 # References
