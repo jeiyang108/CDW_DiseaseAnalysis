@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>COMP8071_MultidimensionalProject_CDW</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>PDblR4jSUN6kfNo3Dnm7BNO4AZc=2023-03-20 5:39:49 PM2023-03-20 4:09:39 PM</TimeStamp>
+        <ID>
+          <String>COMP8071</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>2gD7pJIE5JCJ3W/w51Ww1w8Bfqo=2023-03-20 4:14:55 PM2023-03-20 4:11:38 PM</TimeStamp>
+        <ID>
+          <String>COMP8071 Project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GRlYT0n8yvJfdl1ABguA7cLgQII=2023-03-20 8:57:19 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Education Level Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dTX8ZkNgHxzk0hx7/hHJzbIJPkQ=2023-03-20 8:57:03 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>BMI Range Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4PP/dDqNpcM8g4kroRxdg/xHjNg=2023-03-20 8:56:48 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Tobacco Cons Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6arEg0mgaWsMenfbEWo84P5Q66M=2023-03-20 8:55:07 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Age Range Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HiWIbEececcumHZBkTUvdQ91aRw=2023-03-20 8:53:25 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Disease Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EXFmR3nugFCt8WDH+Gqt0U20JWM=2023-03-20 8:55:47 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Race Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ApdhoOdU3timOgCKdCZD8xk4L2o=2023-03-20 8:56:14 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>Alcohol Cons Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>9Zatgj4iDjM9H+s67IdRBgF3Hm8=2023-03-20 8:57:19 PM2023-03-20 4:39:19 PMu/ysadIXhJb94KarS3DI4TEHxpk=2023-03-20 4:39:19 PM2023-03-20 4:39:19 PM</TimeStamp>
+        <ID>
+          <String>COMP8071 Project</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>fWstZS69x+86y93PyDrHdDQnwbY=2023-03-20 4:08:18 PM2023-03-20 4:08:18 PM</TimeStamp>
+      <ID>
+        <String>COMP8071_MultidimensionalProject_CDW</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-03-21T03:57:54.616667Z</LastDeployed>
+</DeploymentSnapshot>
