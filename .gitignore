@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Chart_App_CDW/bin
+/Chart_App_CDW/obj
+/COMP8071_MultidimensionalProject_CDW/bin
