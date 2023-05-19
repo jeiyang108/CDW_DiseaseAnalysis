@@ -35,7 +35,7 @@ Azure, Microsoft SQL Server, T-SQL, OLAP, Stored Procedures, Visual Studio, Anal
 
 
 # References
-NHANES Variable List (used as a dictionary to interpret column names and possible values) https://wwwn.cdc.gov/nchs/nhanes/search/DataPage.aspx?Cycle=2013-2014 
-NHANES Dataset (2013-2014) https://www.kaggle.com/datasets/knpwarrior/selected-datasets-from-nhanes-20132014
-CDC Application: https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html
-Article: https://deliverypdf.ssrn.com/delivery.php?ID=656004084115000031071126013022000071023008077017062005096023077096116104106003078000024056016012056112062067112076104116008104105083064042055007018083073026126085003010021000093021125114086000066078116031031094078031028027065031106087114022097117083074&EXT=pdf&INDEX=TRUE
+* NHANES Variable List (used as a dictionary to interpret column names and possible values) https://wwwn.cdc.gov/nchs/nhanes/search/DataPage.aspx?Cycle=2013-2014 
+* NHANES Dataset (2013-2014) https://www.kaggle.com/datasets/knpwarrior/selected-datasets-from-nhanes-20132014
+* CDC Application: https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html
+* Article: https://deliverypdf.ssrn.com/delivery.php?ID=656004084115000031071126013022000071023008077017062005096023077096116104106003078000024056016012056112062067112076104116008104105083064042055007018083073026126085003010021000093021125114086000066078116031031094078031028027065031106087114022097117083074&EXT=pdf&INDEX=TRUE
