@@ -12,11 +12,13 @@ The NHANES dataset is open to the public and it contains a lot of demographic da
 # ETL Process
 The NHANES dataset consists of 5 tables; demographic, diet, examination, labs and questionnaire. The tables include 1816 columns in total, and each column name can be searched via NHANES Variable List web page.
 
-(1) Dataset to OLTP
+(1) Dataset to OLTP:
+
 For example, “RIDRETH3” is a column in the ‘demographic’ table of the NHANES(2013-2014) dataset. The CDC provides documentations and web pages that include the definition of the column ‘RIDRETH3’ and its possible values.
 And based on this analysis, we can define our new OLTP schema and populate the tables. Store procedure [dbo].[DataSetToOltp] has been created to extract, transform and load data from the NHANES_DataSet to our new OLTP database. This stored procedure can be reused to add more data to our data warehouse when a new survey outcome is available.
 
-(2) OLTP to OLAP
+(2) OLTP to OLAP:
+
 For this project, 7 dimensions and a fact table were created to analyze the associations between common chronic diseases and demographic/health factors.
 * AgeRangeDIm
 * RaceDim
@@ -28,6 +30,7 @@ For this project, 7 dimensions and a fact table were created to analyze the asso
 * DiagnosisFacts
 
 By using this OLAP schema, we can generate reports that compare the number of patients(diagnosed survey participants) of each race, education level, BMI range, etc.
+Store procedure [dbo].[OltpToOlap] has been created to extract, transform and load data from the OLTP database to the OLAP database for this particular analysis.
 
 
 # Used technologies/tools: 
