@@ -34,7 +34,10 @@ Store procedure [dbo].[OltpToOlap] has been created to extract, transform and lo
 
 
 # Used technologies/tools: 
-Azure, Microsoft SQL Server, T-SQL, OLAP, Stored Procedures, Visual Studio, Analysis Services, ASP.NET Core, ODBC, Chart.js
+Azure(Hosting DB & web app), 
+Microsoft SQL Server 2018, T-SQL, OLAP, Stored Procedures, 
+Visual Studio 2022, Analysis Services, 
+ASP.NET Core 6.0, ODBC 7.0, Chart.js
 
 
 # References
