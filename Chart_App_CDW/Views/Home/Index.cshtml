@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chart.js Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+  <script>
+    const data = [{"id":0,"bmiRange":"Less than 18.5","disease":"Type 1 diabetes","numOfPatients":3},{"id":0,"bmiRange":"18.5-24.9","disease":"Type 1 diabetes","numOfPatients":11},{"id":0,"bmiRange":"25-29.9","disease":"Type 1 diabetes","numOfPatients":22},{"id":0,"bmiRange":"30.0 or higher","disease":"Type 1 diabetes","numOfPatients":63},{"id":0,"bmiRange":"Less than 18.5","disease":"Type 2 diabetes","numOfPatients":3},{"id":0,"bmiRange":"18.5-24.9","disease":"Type 2 diabetes","numOfPatients":88},{"id":0,"bmiRange":"25-29.9","disease":"Type 2 diabetes","numOfPatients":188},{"id":0,"bmiRange":"30.0 or higher","disease":"Type 2 diabetes","numOfPatients":328},{"id":0,"bmiRange":"18.5-24.9","disease":"Gestational diabetes","numOfPatients":7},{"id":0,"bmiRange":"25-29.9","disease":"Gestational diabetes","numOfPatients":9},{"id":0,"bmiRange":"30.0 or higher","disease":"Gestational diabetes","numOfPatients":13}];
+
+    const diseases = [...new Set(data.map(item => item.disease))];
+    const bmiRanges = [...new Set(data.map(item => item.bmiRange))];
+
+    const datasets = diseases.map(disease => {
+      const values = bmiRanges.map(range => {
+        const item = data.find(i => i.disease === disease && i.bmiRange === range);
+        return item ? item.numOfPatients : 0;
+      });
+      return {
+        label: disease,
+        data: values,
+        backgroundColor: getRandomColor(),
+        borderWidth: 1,
+      };
+    });
+
+    const chartData = {
+      labels: bmiRanges,
+      datasets: datasets,
+    };
+
+    const options = {
+      responsive: true,
+      scales: {
+        xAxes: [{
+          stacked: true,
+        }],
+        yAxes: [{
+          stacked: true,
+          ticks: {
+            beginAtZero: true,
+          },
+        }],
+      },
+    };
+
+    const chart = new Chart('myChart', {
+      type: 'bar',
+      data: chartData,
+      options: options,
+    });
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>

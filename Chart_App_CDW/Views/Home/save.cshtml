@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                alert("Testing");
+                var xyValues = eval(this.responseText);
+                new Chart("myChart", {
+                    type: "scatter",
+                    data: {
+                        datasets: [{
+                            pointRadius: 4,
+                            pointBackgroundColor: "rgb(0,0,255)",
+                            data: xyValues
+                        }]
+                    },
+                    options: {
+                        legend: { display: false },
+                        scales: {
+                            xAxes: [{ ticks: { min: 40, max: 160 } }],
+                            yAxes: [{ ticks: { min: 6, max: 16 } }],
+                        }
+                    }
+                });
+            }
+            //xhttp.open("GET", "/charts/chart");
+            xhttp.open("GET", "DiseaseAnalysis");
+            xhttp.send();
+        }
+
+    </script>
+
+</body>
+</html>
